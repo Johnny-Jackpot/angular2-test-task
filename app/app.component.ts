@@ -16,7 +16,7 @@ import {Router} from '@angular/router';
     </section>
     <footer>
       <p>Oleksandr Nazarenko</p>
-      <p><a href="#">View on github</a></p>
+      <p><a href="https://github.com/Johnny-Jackpot/angular2-test-task" target="_blank">View on github</a></p>
     </footer>
   </div>
   `
