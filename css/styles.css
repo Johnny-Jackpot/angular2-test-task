@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*****************
+*** App styles ***
+*****************/
+.root, .google {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.root {
+  background-image: url("../img/root.png"); }
+
+.google {
+  background-image: url("../img/google.png"); }
+
+footer {
+  width: 100%; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+figure {
+  margin: 10px auto; }
+  figure img {
+    width: 100%; }
+  figure.image-view {
+    width: initial;
+    max-width: 100%; }
+
+figcaption {
+  color: #04aeda; }
+
+nav, footer, figcaption {
+  text-align: center; }
+
+section {
+  margin-bottom: 35px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0 2px 1px #000000;
+  padding: 5px;
+  height: 35px; }
+  footer p {
+    margin: 0;
+    color: #04aeda; }
+    footer p a {
+      color: #04aeda; }
+
+@media only screen and (min-width: 768px) {
+  figure {
+    width: 48%; } }
+
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    margin: 0 auto; }
+  figure {
+    width: 31.33333%; } }

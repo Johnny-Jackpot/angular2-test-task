@@ -1,0 +1,76 @@
+@import "reset";
+
+/*****************
+*** App styles ***
+*****************/
+$footer-height: 35px;
+$box-shadow: 0 0 2px 1px #000000;
+$full-width: 100%;
+$text-color: #04aeda;
+
+.root, .google {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.root { background-image: url("../img/root.png"); }
+.google { background-image: url("../img/google.png"); }
+
+footer { width: $full-width; }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+figure {
+    margin: 10px auto;
+
+    img { width: $full-width; }
+
+    &.image-view {
+        width: initial;
+        max-width: 100%;
+    }
+}
+
+
+figcaption { color: $text-color; }
+
+nav, footer, figcaption{ text-align: center; }
+
+section { margin-bottom: $footer-height; }
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: $box-shadow;
+    padding: 5px;
+    height: $footer-height;
+    
+    p {
+        margin: 0;
+        color: $text-color;
+
+        a { color: $text-color; }        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    figure { width: ($full-width - 4%) / 2; }
+}
+
+@media only screen and (min-width: 960px) {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    figure { width: ($full-width - 6%) / 3; }
+}
+
